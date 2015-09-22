@@ -23,16 +23,20 @@
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
         <module name="Amazon" />
+        <module name="Chase" />
         <module name="Cnn" />
         <module name="Ebay" />
+        <module name="GeicoInsurance" />
         <module name="Generic" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="Amazon" target="1.5" />
       <module name="AutomationFramework3" target="1.5" />
+      <module name="Chase" target="1.5" />
       <module name="Cnn" target="1.5" />
       <module name="Ebay" target="1.5" />
+      <module name="GeicoInsurance" target="1.5" />
       <module name="Generic" target="1.5" />
     </bytecodeTargetLevel>
   </component>

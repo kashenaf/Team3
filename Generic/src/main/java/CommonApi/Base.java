@@ -1,5 +1,6 @@
 package CommonApi;
 
+import javafx.beans.binding.IntegerExpression;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
@@ -10,6 +11,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
+import java.util.InputMismatchException;
 import java.util.concurrent.TimeUnit;
 
 /**
@@ -78,5 +80,12 @@ public class Base {
    public WebElement getTextBycssXpath(String locator){
       WebElement element = driver.findElement(By.xpath(locator));
       return element;
+   }
+   //keys
+   public void clearInputBox(String locator){
+      driver.findElement(By.cssSelector(locator)).clear();
+   }
+   public void sleepFor(int sec) throws InterruptedException{
+      Thread.sleep(1000*sec);
    }
 }

@@ -13,6 +13,8 @@
         <module>Cnn</module>
         <module>Generic</module>
         <module>Ebay</module>
+        <module>GeicoInsurance</module>
+        <module>Chase</module>
     </modules>
     <dependencyManagement>
         <dependencies>
